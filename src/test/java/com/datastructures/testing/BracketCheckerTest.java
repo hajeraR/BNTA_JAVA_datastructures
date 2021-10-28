@@ -1,5 +1,6 @@
 package com.datastructures.testing;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -7,13 +8,20 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BracketCheckerTest {
 
+    private BracketChecker checker;
+
+    @BeforeEach
+    void setUp() {
+        checker = new BracketChecker();
+    }
+
     @Test
     void itShouldCheckCorrectNumberOfBrackets() {
         //given
         String input = "({})";
 
         //when
-        BracketChecker checker = new BracketChecker();
+        //BracketChecker checker = new BracketChecker();
         boolean actual = checker.bracketChecker(input);
 
         //then
@@ -26,7 +34,7 @@ class BracketCheckerTest {
         String input = "({(})";
 
         //when
-        BracketChecker checker = new BracketChecker();
+        //BracketChecker checker = new BracketChecker();
         boolean actual = checker.bracketChecker(input);
 
         //then
@@ -39,7 +47,7 @@ class BracketCheckerTest {
         String input = "";
 
         //when
-        BracketChecker checker = new BracketChecker();
+       // BracketChecker checker = new BracketChecker();
         Boolean actual = checker.bracketChecker(input);
 
         //then
@@ -52,7 +60,7 @@ class BracketCheckerTest {
         String input = "[";
 
         //when
-        BracketChecker checker = new BracketChecker();
+        //BracketChecker checker = new BracketChecker();
         Boolean actual = checker.bracketChecker(input);
 
         //then
@@ -65,7 +73,7 @@ class BracketCheckerTest {
         String input = "{([(([{}]))])}";
 
         //when
-        BracketChecker checker = new BracketChecker();
+        //BracketChecker checker = new BracketChecker();
         Boolean actual = checker.bracketChecker(input);
 
         //then
@@ -78,7 +86,7 @@ class BracketCheckerTest {
         String input = "{([(([{]))])}";
 
         //when
-        BracketChecker checker = new BracketChecker();
+        //BracketChecker checker = new BracketChecker();
         Boolean actual = checker.bracketChecker(input);
 
         //then
@@ -91,7 +99,7 @@ class BracketCheckerTest {
         String input = " ";
 
         //when
-        BracketChecker checker = new BracketChecker();
+       // BracketChecker checker = new BracketChecker();
         Boolean actual = checker.bracketChecker(input);
 
         //then
