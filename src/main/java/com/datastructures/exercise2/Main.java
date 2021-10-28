@@ -27,6 +27,7 @@ public class Main {
 
         bracketChecker("({({)})");
 //        String brackets = "({()})({()({})})";
+        Boolean result = bracketChecker("({({)})");
 
     }
 
@@ -66,7 +67,7 @@ public class Main {
 
 
         }
-        System.out.println(stack.isEmpty());
+        //System.out.println(stack.isEmpty());
         return stack.isEmpty();
 
     }
