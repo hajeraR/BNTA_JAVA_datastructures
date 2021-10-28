@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 
+//this class shows our initial thought process, the completed code is under /testing in CharacterMap
+
 public class Main {
     public static void main(String[] args) {
         String characterString = "A,B,B,A,C,A,A,C,C,C,B,B,B,A,C,C,A,Z";

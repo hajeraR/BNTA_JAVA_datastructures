@@ -21,6 +21,7 @@ package com.datastructures.exercise2;
 import java.util.List;
 import java.util.Stack;
 
+//this class shows our initial thought process, the completed code is under /testing in BracketChecker
 
 public class Main {
     public static void main(String[] args) {
@@ -28,6 +29,7 @@ public class Main {
         bracketChecker("({({)})");
 //        String brackets = "({()})({()({})})";
         Boolean result = bracketChecker("({({)})");
+        System.out.println(result);
 
     }
 
@@ -69,6 +71,7 @@ public class Main {
         }
         //System.out.println(stack.isEmpty());
         return stack.isEmpty();
+
 
     }
 }
