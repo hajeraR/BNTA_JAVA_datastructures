@@ -34,7 +34,7 @@ public class Main {
     public static boolean bracketChecker(String brackets) {
 
         if (brackets.isEmpty()) {
-            System.out.println("null");
+            return false;
         }
 
         Stack<Character> stack = new Stack<Character>();
